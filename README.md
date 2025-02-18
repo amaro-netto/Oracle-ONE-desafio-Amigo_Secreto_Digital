@@ -64,9 +64,6 @@ Para executar o projeto localmente:
 *   **JavaScript:** Lógica da aplicação e manipulação do DOM.
 *   **Fontes:** Google Fonts (Inter, Merriweather)
 
-## Pessoas Contribuidoras
-
-
 
 ## Pessoas Desenvolvedoras do Projeto
 

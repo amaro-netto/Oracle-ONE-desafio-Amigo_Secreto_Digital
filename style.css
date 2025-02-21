@@ -17,39 +17,56 @@
 }
 
 body {
-    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
+    min-height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    padding: 20px; /* Adiciona um padding ao body para evitar que o conteúdo encoste nas bordas */
+    padding: 20px;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ocupa 100% da largura disponível */
-    max-width: 900px; /* Largura máxima para telas grandes */
+    width: 100%;
+    max-width: 900px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 20px var(--shadow-color);
-    margin: auto; /* Centraliza o conteúdo horizontalmente */
+    margin: auto;
 }
 
 /* Banner */
 .header-banner {
-    flex: 30%; /* Reduz o tamanho do banner */
+    flex: 30%;
     display: flex;
+    flex-direction: column; /* Alterado para column */
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 20px; /* Adicionado padding para espaçamento */
     background-color: var(--color-primary);
+}
+
+.header-banner h1 { /* Estilo para o título dentro do banner */
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    text-align: center;
+    margin-bottom: 10px; /* Espaço entre o título e a imagem */
+}
+
+.header-banner img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto;
 }
 
 /* Seção de entrada */
 .input-section {
-    flex: 70%; /* Aumenta o tamanho da seção de entrada */
+    flex: 70%;
     background-color: var(--color-secondary);
     border-radius: 20px;
     display: flex;
@@ -61,18 +78,18 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 2.5rem; /* Reduz um pouco o tamanho da fonte */
+    font-size: 2.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: var(--color-white);
     text-shadow: 2px 2px 4px var(--shadow-color);
-    text-align: center; /* Centraliza o título em telas menores */
+    text-align: center;
 }
 
 .section-title {
     font-family: "Poppins", sans-serif;
-    font-size: 1.8rem; /* Reduz um pouco o tamanho da fonte */
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--color-primary);
     margin: 15px 0;
@@ -202,52 +219,59 @@ li:last-child {
 /* Responsividade */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Reduz o padding em telas menores */
+        padding: 10px;
     }
 
     .main-title {
-        font-size: 2rem; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 2rem;
     }
 
     .section-title {
-        font-size: 1.5rem; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 1.5rem;
     }
 
     .input-wrapper {
-        flex-direction: column; /* Empilha os elementos */
+        flex-direction: column;
     }
 
      .input-title {
-        border-radius: 8px 8px 0 0; /* Arredonda apenas a parte superior */
-        margin-bottom: 0; /* Remove a margem inferior */
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 0;
         border-bottom: none;
     }
 
     .button-add {
-        border-radius: 0 0 8px 8px; /* Arredonda apenas a parte inferior */
+        border-radius: 0 0 8px 8px;
     }
-
 
     .button-container {
         width: 100%;
     }
 
     .header-banner {
-        flex: 20%; /* Reduz o tamanho do banner em telas menores */
+        flex: 20%;
     }
 
     .input-section {
-        flex: 80%; /* Aumenta o tamanho da seção de entrada em telas menores */
-        padding: 20px; /* Reduz o padding em telas menores */
+        flex: 80%;
+        padding: 20px;
+    }
+
+     .header-banner {
+        flex-direction: column; /* Mantém a direção vertical em telas menores */
+    }
+
+    .header-banner h1 {
+        margin-bottom: 10px; /* Mantém o espaçamento em telas menores */
     }
 }
 
 @media (max-height: 600px) {
     .main-title {
-        font-size: 1.8rem; /* Reduz ainda mais o tamanho da fonte em telas muito baixas */
+        font-size: 1.8rem;
     }
 
     .section-title {
-        font-size: 1.3rem; /* Reduz ainda mais o tamanho da fonte em telas muito baixas */
+        font-size: 1.3rem;
     }
 }

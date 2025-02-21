@@ -1,11 +1,12 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-primary: #6246EA;
+    --color-secondary: #F7F7F7;
+    --color-tertiary: #A8A4CE;
+    --color-button: #000438;
+    --color-button-hover: #2dd0e6;
+    --color-text: #333333;
     --color-white: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos gerais */
@@ -16,57 +17,65 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px; /* Adiciona um padding ao body para evitar que o conteúdo encoste nas bordas */
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 900px; /* Largura máxima para telas grandes */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    margin: auto; /* Centraliza o conteúdo horizontalmente */
 }
 
 /* Banner */
 .header-banner {
-    flex: 40%;
+    flex: 30%; /* Reduz o tamanho do banner */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 0px;
+    background-color: var(--color-primary);
 }
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
+    flex: 70%; /* Aumenta o tamanho da seção de entrada */
     background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
 }
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
+    font-size: 2.5rem; /* Reduz um pouco o tamanho da fonte */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     color: var(--color-white);
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    text-align: center; /* Centraliza o título em telas menores */
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem; /* Reduz um pouco o tamanho da fonte */
+    font-weight: 600;
     color: var(--color-primary);
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -75,70 +84,95 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
+    max-width: 700px;
+    margin-top: 25px;
 }
 
 .input-name {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px var(--shadow-color);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-name:focus {
+    box-shadow: inset 0 4px 8px var(--shadow-color);
 }
 
 .button-container {
-    width: 300px;
+    width: auto;
     justify-content: center;
+    display: flex;
 }
 
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
     border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px 0 0 8px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    outline: none;
 }
 
 /* Estilos de botão */
 button {
-    padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 12px 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    outline: none;
+}
+
+button:active {
+    transform: translateY(1px);
 }
 
 .button-add {
     background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    color: var(--color-white);
+    border-radius: 0 8px 8px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #0488c5;
 }
 
 /* Listas */
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    padding: 0;
+}
+
+li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
 }
 
 .result-list {
-    margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
-    font-weight: bold;
+    margin-top: 10px;
+    color: #28a745;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -146,17 +180,74 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 12px 30px;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
+    font-size: 1rem;
+    border-radius: 8px;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 15px;
+    max-width: 24px;
+    height: auto;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .main-title {
+        font-size: 2rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .input-wrapper {
+        flex-direction: column; /* Empilha os elementos */
+    }
+
+     .input-title {
+        border-radius: 8px 8px 0 0; /* Arredonda apenas a parte superior */
+        margin-bottom: 0; /* Remove a margem inferior */
+        border-bottom: none;
+    }
+
+    .button-add {
+        border-radius: 0 0 8px 8px; /* Arredonda apenas a parte inferior */
+    }
+
+
+    .button-container {
+        width: 100%;
+    }
+
+    .header-banner {
+        flex: 20%; /* Reduz o tamanho do banner em telas menores */
+    }
+
+    .input-section {
+        flex: 80%; /* Aumenta o tamanho da seção de entrada em telas menores */
+        padding: 20px; /* Reduz o padding em telas menores */
+    }
+}
+
+@media (max-height: 600px) {
+    .main-title {
+        font-size: 1.8rem; /* Reduz ainda mais o tamanho da fonte em telas muito baixas */
+    }
+
+    .section-title {
+        font-size: 1.3rem; /* Reduz ainda mais o tamanho da fonte em telas muito baixas */
+    }
 }

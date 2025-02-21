@@ -1,4 +1,4 @@
-## 🎁 Amigo Secreto Digital 🎁 
+<h1 align="center"> 🎁 Amigo Secreto Digital 🎁  <p align="center">
 
 ![Imagem representativa de amigo secreto](/assets/amigo-secreto.png)
 

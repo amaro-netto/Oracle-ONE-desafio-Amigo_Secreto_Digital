@@ -1,4 +1,4 @@
-🎁 Amigo Secreto Digital 🎁
+🎁 Amigo Secreto Digital 🎁 
 
 ![Imagem representativa de amigo secreto](assets/amigo-secreto.png)
 

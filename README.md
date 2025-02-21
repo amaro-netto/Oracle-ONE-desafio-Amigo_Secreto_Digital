@@ -1,6 +1,6 @@
 🎁 Amigo Secreto Digital 🎁 
 
-![Imagem representativa de amigo secreto](amigo-secreto.png)
+![Imagem representativa de amigo secreto](assets/amigo-secreto.png)
 
 ## Badges
 [![HTML Valido](https://img.shields.io/badge/HTML-Validado-informational?style=flat&logo=html5&logoColor=white&color=2ECC71)](https://validator.w3.org/)

@@ -1,41 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Amigo Secreto</title>
 </head>
-
 <body>
-    <main class="main-content">
-        <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
-        </header>
-        
-        <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
-            </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
-
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
-                    Sortear amigo
+    <div class="theme-switch">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    <main class="app-container">
+        <div class="screens-wrapper">
+            <!-- Screen 1: Welcome -->
+            <section class="screen" id="welcome-screen">
+                <div class="header-banner">
+                    <h1 class="main-title">Amigo Secreto</h1>
+                    <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
+                    <p class="subtitle">Organize seu amigo secreto de forma fácil e divertida!</p>
+                </div>
+                <button class="button-primary" onclick="navigateToScreen(1)">
+                    <span>Começar Agora</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </button>
-            </div>
-        </section>
+            </section>
+
+            <!-- Screen 2: Add Names -->
+            <section class="screen" id="names-screen">
+                <div class="input-section">
+                    <h2 class="section-title">Digite o nome dos seus amigos</h2>
+                    <div class="input-wrapper">
+                        <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                        <button class="button-add" onclick="adicionarAmigo()">+</button>
+                    </div>
+                    <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                    <button class="button-primary" onclick="sortearAmigo()">Sortear</button>
+                </div>
+            </section>
+
+            <!-- Screen 3: Result -->
+            <section class="screen" id="result-screen">
+                <div class="result-section">
+                    <h2 class="section-title">Resultado</h2>
+                    <ul id="resultado" class="result-list" aria-live="polite"></ul>
+                    <button class="button-primary" onclick="navigateToScreen(1)">Tentar Novamente</button>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="app.js" defer></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <script src="confetti.js"></script>
+    </body>
 </html>

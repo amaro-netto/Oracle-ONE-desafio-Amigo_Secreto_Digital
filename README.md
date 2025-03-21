@@ -19,7 +19,6 @@
 *   [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 *   [Acesso ao Projeto](#acesso-ao-projeto)
 *   [Tecnologias utilizadas](#tecnologias-utilizadas)
-*   [Pessoas Contribuidoras](#pessoas-contribuidoras)
 *   [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras-do-projeto)
 *   [Licença](#licença)
 *   [Conclusão](#conclusão)
@@ -45,6 +44,10 @@ Este projeto é uma aplicação web simples que permite aos usuários organizar 
 
 *  https://github.com/user-attachments/assets/a91c5a71-0399-4537-b878-9b482b555ef2
 
+![screencapture-127-0-0-1-5500-2025-03-21-01_35_48](https://github.com/user-attachments/assets/753db1f6-c2b2-4e61-a3d1-12f26a63b79c)
+![screencapture-127-0-0-1-5500-2025-03-21-01_35_59](https://github.com/user-attachments/assets/5056469b-b553-40d7-a840-64a33227a69a)
+![screencapture-127-0-0-1-5500-2025-03-21-01_36_22](https://github.com/user-attachments/assets/48d89f18-aef6-409c-8174-56aaf1736fa8)
+![screencapture-127-0-0-1-5500-2025-03-21-01_36_32](https://github.com/user-attachments/assets/42ecabae-afba-47b6-86cc-dd8f110d053d)
 
 
 ## Acesso ao Projeto

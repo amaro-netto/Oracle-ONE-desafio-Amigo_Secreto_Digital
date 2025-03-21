@@ -11,7 +11,6 @@
 
 ## Índice
 
-*   [Título e Imagem de capa](#título--amigo-secreto-)
 *   [Badges](#badges)
 *   [Índice](#índice)
 *   [Descrição do Projeto](#descrição-do-projeto)
@@ -48,6 +47,7 @@ Este projeto é uma aplicação web simples que permite aos usuários organizar 
 ![screencapture-127-0-0-1-5500-2025-03-21-01_35_59](https://github.com/user-attachments/assets/5056469b-b553-40d7-a840-64a33227a69a)
 ![screencapture-127-0-0-1-5500-2025-03-21-01_36_22](https://github.com/user-attachments/assets/48d89f18-aef6-409c-8174-56aaf1736fa8)
 ![screencapture-127-0-0-1-5500-2025-03-21-01_36_32](https://github.com/user-attachments/assets/42ecabae-afba-47b6-86cc-dd8f110d053d)
+![screencapture-192-168-0-106-5500-2025-03-21-01_40_07](https://github.com/user-attachments/assets/bd188ab4-76b9-4366-970f-738bb4a80ea4)
 
 
 ## Acesso ao Projeto

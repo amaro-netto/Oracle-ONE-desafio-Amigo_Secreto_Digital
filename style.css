@@ -488,3 +488,44 @@ body {
     color: var(--text-color);
     list-style: none;
 }
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os ícones */
+    padding: 10px;
+    background-color: #fff; /* Cor de fundo da "caixa" */
+    border: 1px solid #ddd; /* Borda da "caixa" */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    max-width: 300px; /* Largura máxima da "caixa" */
+    margin: 0 auto; /* Centraliza a "caixa" */
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}

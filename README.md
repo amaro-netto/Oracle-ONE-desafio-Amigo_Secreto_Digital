@@ -39,9 +39,12 @@ Este projeto é uma aplicação web simples que permite aos usuários organizar 
 *   **Aviso de Poucos Participantes:** Garante que haja ao menos dois participantes para a realização do sorteio.
 *   **Adicionar com Enter:** Adiciona o nome do amigo à lista ao pressionar a tecla "Enter" no campo de texto.
 
+
 **Demonstração:**
 
-*  https://github.com/user-attachments/assets/a91c5a71-0399-4537-b878-9b482b555ef2
+https://sorteiroamigosecreto.netlify.app/
+
+##
 
 ![screencapture-127-0-0-1-5500-2025-03-21-01_35_48](https://github.com/user-attachments/assets/753db1f6-c2b2-4e61-a3d1-12f26a63b79c)
 ![screencapture-127-0-0-1-5500-2025-03-21-01_35_59](https://github.com/user-attachments/assets/5056469b-b553-40d7-a840-64a33227a69a)

@@ -6,6 +6,7 @@
 [![HTML Valido](https://img.shields.io/badge/HTML-Validado-informational?style=flat&logo=html5&logoColor=white&color=2ECC71)](https://validator.w3.org/)
 [![CSS Valido](https://img.shields.io/badge/CSS-Validado-informational?style=flat&logo=css3&logoColor=white&color=2ECC71)](https://jigsaw.w3.org/css-validator/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat&logo=javascript&logoColor=black)](https://www.javascript.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/845a0fe8-e01d-4277-b57b-7ea7b1c82648/deploy-status)](https://app.netlify.com/projects/sorteiroamigosecreto/deploys)
 [![Status](https://img.shields.io/badge/Status-Concluído-success)](https://github.com/seu-usuario/seu-repositorio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
